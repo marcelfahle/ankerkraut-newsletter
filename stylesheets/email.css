@@ -1,0 +1,175 @@
+/* ------------------------------------- 
+		GLOBAL 
+------------------------------------- */
+* { 
+	margin:0;
+	padding:0;
+}
+*, body { font-family: Arial, Helvetica, sans-serif !important; }
+
+img { 
+	max-width: 100%; 
+}
+.collapse {
+	margin:0;
+	padding:0;
+}
+body {
+	-webkit-font-smoothing:antialiased; 
+	-webkit-text-size-adjust:none; 
+	width: 100%!important; 
+	height: 100%;
+}
+
+
+/* ------------------------------------- 
+		ELEMENTS 
+------------------------------------- */
+
+.btn {
+	text-decoration:none;
+	text-align:center;
+	cursor:pointer;
+	display: block;
+  margin: 10px auto 40px auto;
+  width: 250px;
+}
+
+
+table.social {
+  padding: 50px;
+  max-width: 480px;
+	background-color: #f6f5ef;
+  margin: 0 auto;
+	
+}
+
+/* ------------------------------------- 
+		HEADER 
+------------------------------------- */
+
+
+/* ------------------------------------- 
+		BODY 
+------------------------------------- */
+table.body-wrap { width: 100%;}
+
+
+
+p, ul { 
+	margin-bottom: 10px; 
+	font-weight: normal; 
+	font-size:22px; 
+	line-height:1.65;
+}
+p span {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fa5239;
+}
+
+ul li {
+	margin-left:5px;
+	list-style-position: inside;
+}
+
+
+
+/* --------------------------------------------------- 
+		RESPONSIVENESS
+		Nuke it from orbit. It's the only way to be sure. 
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+	display:block!important;
+	max-width:500px!important;
+	margin:0 auto!important; /* makes it centered */
+	clear:both!important;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+	padding:15px 0;
+	max-width:500px;
+	margin:0 auto;
+	display:block; 
+}
+.logo {
+  text-align: center;
+  max-width: 230px;
+  margin: 35px auto 50px auto;
+}
+.copy {
+
+	max-width:400px;
+	margin:0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.copy.footnote {
+  font-size: 16px;
+  margin-top: 40px;
+  color: #666666;
+}
+.social-links {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+} 
+.social-links a {
+  text-decoration: none !important;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:link, a:visited {
+  
+}
+a:hover, a:active {
+  color: #fa5239;
+  text-decoration: underline;
+}
+hr {
+  border: none;
+  height: 1px;
+  color: #000000;
+  background-color: #000000;
+  margin-bottom: 30px;
+}
+.footer-copy {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table { width: 100%; }
+
+
+
+/* Be sure to place a .clear element after each set of columns, just to be safe */
+.clear { display: block; clear: both; }
+
+
+/* ------------------------------------------- 
+		PHONE
+		For clients that support media queries.
+		Nothing fancy. 
+-------------------------------------------- */
+@media only screen and (max-width: 600px) {
+	
+
+	div[class="column"] { width: auto!important; float:none!important;}
+	
+	table.social div[class="column"] {
+		width:auto!important;
+	}
+
+}
